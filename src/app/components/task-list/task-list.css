@@ -1,0 +1,15 @@
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.task-card {
+  width: 300px;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}

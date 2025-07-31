@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <span>Task Management</span>
+  <button mat-button color="accent" routerLink="/task-form">Add Task</button>
+</mat-toolbar>
+
+<div class="task-list">
+  <mat-card *ngFor="let task of tasks" class="task-card">
+    <mat-card-title>{{ task.title }}</mat-card-title>
+    <mat-card-content>{{ task.description }}</mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="editTask(task)">Edit</button>
+      <button mat-button color="warn" (click)="deleteTask(task.id)">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

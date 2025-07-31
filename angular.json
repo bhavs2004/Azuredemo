@@ -25,13 +25,10 @@
               }
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
+            
           },
           "configurations": {
             "production": {
@@ -87,11 +84,15 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a5495b50-a44b-4d34-9086-34bb934135c0"
   }
 }
